@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:hint="enter your number"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+
+    <SeekBar
+        android:id="@+id/skBar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:max="20" />
+
+    <TextView
+        android:id="@+id/foiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Calculator" />
+
+    <TextView
+        android:id="@+id/foizda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Foizda: "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/umumiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Umumiy: "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
